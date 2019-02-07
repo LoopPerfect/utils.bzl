@@ -146,13 +146,6 @@ prebuilt_cxx_library(
   ],
 )
 
-
-pkgconfig(
-  name = 'xerces',
-  find = 'xerces-c',
-  search = '$(location :xerces-cmake)/dist/lib/pkgconfig'
-)
-
 cxx_binary(
   name = 'count',
   srcs = ['samples/src/DOMCount/DOMCount.cpp'],
