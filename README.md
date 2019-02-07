@@ -7,7 +7,7 @@ Some handy functions for common packaging tasks for Skylark based buildsystems e
 
 extracts file from a given rule
 
-### example
+### Example
 
 ```python
 load('//:utils.bzl', 'extract')
@@ -57,7 +57,7 @@ As per convention it will look for `*.pc`
 We advise against using absolute paths eg. `/usr/lib` to fetch system-libraries as this will make builds irreproducible.
 
 
-### example
+### Example
 
 ```python
 
@@ -95,6 +95,8 @@ A common target is `install` that will create a distributatble version of the li
 
 ### Examples
 
+#### Version Header-Only Extraction
+
 ```python
 cmake(
   name = 'config',
@@ -111,7 +113,7 @@ cxx_library(
 )
 ```
 
-
+#### Full CMake Build - Xerces
 
 ```python
 
@@ -161,4 +163,6 @@ cxx_binary(
 ```
 
 
+## subdir_glob
 
+see https://buckbuild.com/function/subdir_glob.html#content
