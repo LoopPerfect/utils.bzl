@@ -1,6 +1,6 @@
 def extract(rule, path):
   name = 'extract-' + (
-    rule.replace(':','') + '-' + 
+    rule.replace(':','').replace('//', '') + '-' +
     path
       .replace('/','-')
       .replace('.','-'))
